@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Űrlap - Web-programozás</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Űrlap - Web-programozás</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="masodik.html">JavaScript</a></li>
+            <li><a href="harmadik.html">Adatbázisok</a></li>
+            <li><a href="negyedik.html">Táblázat</a></li>
+            <li><a href="otodik.html" class="active">Űrlap</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <p>Töltse ki az alábbi űrlapot!</p>
+        </aside>
+        <div class="content">
+            <h2>Űrlap</h2>
+
+            <p>Kérem, töltse ki az alábbi űrlapot! Minden mező kitöltése kötelező!</p>
+
+            <!-- Képek az űrlap felett -->
+            <img src="images/urlap.png" alt="Űrlap kép 1" class="topic-image" />
+            <img src="images/urlap2.jpg" alt="Űrlap kép 2" class="topic-image" />
+
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" name="name" required minlength="10" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email cím:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Tárgy:</label>
+                    <input type="text" id="subject" name="subject" required minlength="10" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Üzenet:</label>
+                    <textarea id="message" name="message" required minlength="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefonszám:</label>
+                    <input type="tel" id="phone" name="phone" required minlength="10" />
+                </div>
+                <button type="submit">Küldés</button>
+            </form>
+            <div id="formMessage"></div>
+        </div>
+    </div>
+
+    <img src="images/vege.jpg" alt="Űrlap kép 3" class="topic-image" />
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

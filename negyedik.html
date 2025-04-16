@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Táblázat - Web-programozás</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Táblázat - Web-programozás</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="masodik.html">JavaScript</a></li>
+            <li><a href="harmadik.html">Adatbázisok</a></li>
+            <li><a href="negyedik.html" class="active">Táblázat</a></li>
+            <li><a href="otodik.html">Űrlap</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <p>Ez az oldal egy táblázatot tartalmaz web-programozási fogalmakkal.</p>
+        </aside>
+        <div class="content">
+            <h2>Web-programozási fogalmak</h2>
+
+            <!-- Képek -->
+            <img src="images/webprog.jpg" alt="WEBPROG" class="topic-image" />
+            <img src="images/fogalmak.jpg" alt="FOGALMAK" class="topic-image" />
+
+            <!-- Táblázat -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fogalom neve</th>
+                        <th>Típus</th>
+                        <th>Rövid leírás</th>
+                        <th>Használati terület</th>
+                        <th>Példa</th>
+                        <th>Kapcsolódó technológiák</th>
+                        <th>Megjegyzés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Markup nyelv</td>
+                        <td>Weboldalak szerkezetének leírása</td>
+                        <td>Weboldalak</td>
+                        <td>&lt;div&gt;, &lt;p&gt;</td>
+                        <td>CSS, JavaScript</td>
+                        <td>Alapvető webtechnológia</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Stíluslap nyelv</td>
+                        <td>Weboldalak megjelenésének formázása</td>
+                        <td>Weboldalak</td>
+                        <td>color, margin</td>
+                        <td>HTML, JavaScript</td>
+                        <td>Különíti el a megjelenést a tartalomtól</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Programozási nyelv</td>
+                        <td>Dinamikus viselkedés weboldalakon</td>
+                        <td>Webalkalmazások</td>
+                        <td>alert(), fetch()</td>
+                        <td>HTML, CSS</td>
+                        <td>Frontend és backend (Node.js)</td>
+                    </tr>
+                    <tr>
+                        <td>AJAX</td>
+                        <td>Technológia</td>
+                        <td>Aszinkron JavaScript és XML, lehetővé teszi az aszinkron adatbetöltést</td>
+                        <td>Webalkalmazások</td>
+                        <td>XMLHttpRequest</td>
+                        <td>JavaScript</td>
+                        <td>Dinamikus tartalom frissítése</td>
+                    </tr>
+                    <tr>
+                        <td>JSON</td>
+                        <td>Adatformátum</td>
+                        <td>JavaScript Object Notation, könnyen olvasható adatcsere formátum</td>
+                        <td>Webalkalmazások</td>
+                        <td>{ "name": "John" }</td>
+                        <td>AJAX, JavaScript</td>
+                        <td>Gyakran használják API-kban</td>
+                    </tr>
+                    <tr>
+                        <td>REST API</td>
+                        <td>Architekrúra</td>
+                        <td>Representational State Transfer, szolgáltatás architektúra</td>
+                        <td>Webszolgáltatások</td>
+                        <td>GET, POST HTTP metódusok</td>
+                        <td>JSON, XML</td>
+                        <td>Könnyen használható és skálázható</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Nyelv</td>
+                        <td>Structured Query Language, relációs adatbázisok lekérdezésére használt nyelv</td>
+                        <td>Adatbázisok</td>
+                        <td>SELECT * FROM users;</td>
+                        <td>MySQL, PostgreSQL</td>
+                        <td>Alapvető adatbáziskezelés</td>
+                    </tr>
+                    <tr>
+                        <td>NoSQL</td>
+                        <td>Adatbázis típus</td>
+                        <td>Nem relációs adatbázisok, rugalmas adatmodellezés</td>
+                        <td>Nagy adathalmazon</td>
+                        <td>Mongo DB</td>
+                        <td>Couch DB</td>
+                        <td>Ideális dinamikus adatokhoz</td>
+                    </tr>
+                    <tr>
+                        <td>DOM</td>
+                        <td>Dokumentum objektum</td>
+                        <td>Document Object Model, a HTML vagy XML dokumentumok programozható reprezentációja</td>
+                        <td>Weboldalak</td>
+                        <td>document.getElementById()</td>
+                        <td>JavaScript</td>
+                        <td>Lehetővé teszi az elemek manipulálását</td>
+                    </tr>
+                    <tr>
+                        <td>HTTP</td>
+                        <td>Protokoll</td>
+                        <td>HyperText Transfer Protocol, az interneten használt protokoll</td>
+                        <td>Weboldalak</td>
+                        <td>GET, POST, PUT</td>
+                        <td>HTTPS</td>
+                        <td>Alapvető webkommunikáció</td>
+                    </tr>
+                    <tr>
+                        <td>HTTPS</td>
+                        <td>Protokoll</td>
+                        <td>HTTP Secure, biztonságos adatátvitelt biztosít a weben</td>
+                        <td>Weboldalak</td>
+                        <td>SSL/TLS</td>
+                        <td>HTTP</td>
+                        <td>Titkosítja az adatokat</td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>CSS keretrendszer</td>
+                        <td>Mobilbarát weboldalak gyors fejlesztésére szolgáló keretrendszer</td>
+                        <td>Webfejlesztés</td>
+                        <td>Grid rendszer</td>
+                        <td>jQuery</td>
+                        <td>Gyorsítja a fejlesztést</td>
+                    </tr>
+                    <tr>
+                        <td>jQuery</td>
+                        <td>JavaScript könyvtár</td>
+                        <td>Egyszerűsíti a DOM manipulációt és az AJAX hívásokat</td>
+                        <td>Weboldalak</td>
+                        <td>$(selector).hide();</td>
+                        <td>JavaScript</td>
+                        <td>Népszerű könyvtár</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>JavaScript keretrendszer</td>
+                        <td>Frontend keretrendszer dinamikus webalkalmazásokhoz</td>
+                        <td>Webalkalmazások</td>
+                        <td>ng-model</td>
+                        <td>TypeScript</td>
+                        <td>Komplex alkalmazásokhoz ideális</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>JavaScript könyvtár</td>
+                        <td>Felhasználói felületek építésére szolgáló könyvtár</td>
+                        <td>Webalkalmazások</td>
+                        <td>Component /></td>
+                        <td>JavaScript</td>
+                        <td>Komponens alapú megközelítés</td>
+                    </tr>
+                    <tr>
+                        <td>Vue.js</td>
+                        <td>JavaScript keretrendszer</td>
+                        <td>Progreszív frontend keretrendszer</td>
+                        <td>Webalkalmazások</td>
+                        <td>template</td>
+                        <td>JavaScript</td>
+                        <td>Könnyen integrálható</td>
+                    </tr>
+                    <tr>
+                        <td>WebSocket</td>
+                        <td>Protokoll</td>
+                        <td>Kétirányú kommunikációt tesz lehetővé a kliens és a szerver között</td>
+                        <td>Valós idejű alkalmazások</td>
+                        <td>new WebSocket(url)</td>
+                        <td>HTTP</td>
+                        <td>Ideális chat alkalmazásokhoz</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Verziókezelő rendszer</td>
+                        <td>Kódverziók kezelésére szolgáló rendszer</td>
+                        <td>Fejlesztési munkafolyamat</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>API</td>
+                        <td>Interfész</td>
+                        <td>Application Programming Interface, szoftverkomponensek közötti kommunikáció</td>
+                        <td>Webszolgáltatások</td>
+                        <td>fetch('https://api.example.com')</td>
+                        <td>REST, GraphQL</td>
+                        <td>Különböző típusú API-k léteznek</td>
+                    </tr>
+                    <tr>
+                        <td>Docker</td>
+                        <td>Virtualizációs platform</td>
+                        <td>Konténerizációs technológia alkalmazások csomagolására és futtatására</td>
+                        <td>Fejlesztés, deployment</td>
+                        <td>docker run -it ubuntu</td>
+                        <td>Kubernetes, Docker Compose</td>
+                        <td>Könnyű, hordozható konténerek</td>
+                    </tr>
+                    <tr>
+                        <td>TypeScript</td>
+                        <td>Programozási nyelv</td>
+                        <td>JavaScript típusos szuperhalmaza, nagyobb alkalmazásokhoz</td>
+                        <td>Webfejlesztés</td>
+                        <td>interface User { name: string; }</td>
+                        <td>JavaScript, Angular</td>
+                        <td>Fordítani kell JavaScript-re</td>
+                    </tr>
+                    <tr>
+                        <td>WebAssembly</td>
+                        <td>Technológia</td>
+                        <td>Bináris formátumú kód, lehetővé teszi magas szintű nyelvek futtatását.</td>
+                        <td>Webalkalmazások</td>
+                        <td>wasm fájlok</td>
+                        <td>JavaScript</td>
+                        <td>Nagy teljesítményű alkalmazásokhoz ideális.</td>
+                    </tr>
+                    <tr>
+                        <td>SASS</td>
+                        <td>CSS preprocessor</td>
+                        <td>CSS preprocesszor, lehetővé teszi változók és mixinek használatát.</td>
+                        <td>Weboldalak stílusának fejlesztése</td>
+                        <td>$primary-color: #333;</td>
+                        <td>CSS</td>
+                        <td>Könnyebbé teszi a stíluslapok karbantartását.</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td>Szolgáltatás</td>
+                        <td>Verziókezelő rendszer, lehetővé teszi kód tárolását és közös munkát.</td>
+                        <td>Fejlesztési munkafolyamat</td>
+                        <td>git push origin main</td>
+                        <td>Git</td>
+                        <td>Széles körben használt platform nyílt forráskódú projektekhez.</td>
+                    </tr>                    
+                </tbody>
+            </table>
+            <img src="images/utolsokep.jpg" alt="utolsokep" class="topic-image" />
+        </div>
+    </div>
+</body>
+</html>
